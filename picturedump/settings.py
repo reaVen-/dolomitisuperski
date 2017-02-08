@@ -32,19 +32,12 @@ ALLOWED_HOSTS = [u'35.164.96.25', u'127.0.0.1']
 
 INSTALLED_APPS = [
     'upload',
-    'progressbarupload',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-
-FILE_UPLOAD_HANDLERS = (
-    "progressbarupload.uploadhandler.ProgressBarUploadHandler",
-    "django.core.files.uploadhandler.MemoryFileUploadHandler",
-    "django.core.files.uploadhandler.TemporaryFileUploadHandler",
-)
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',

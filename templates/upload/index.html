@@ -2,9 +2,6 @@
 
 {% block full %}
 
-{% load progress_bar %}
-{% progress_bar_media %}
-
 <div class="col s4">
 <div class="card brown darken-2">
 	<div class="card-content">
@@ -13,13 +10,18 @@
             {% csrf_token %}
             <input id="id_file_field" name="file_field" type="file" multiple>
             <span class="right"> <input type="submit" value="Upload" /> </span>
-            <span> {% progress_bar %} </span>
         </form>
 		</span>
 	</div>
 </div>
 </div>
 
-<p> Jeg har mottat totalt {{total}} bilder </p>
+<div class="col s4">
+<div class="card brown darken-2">
+	<div class="card-content">
+		<p> Jeg har mottat totalt {{total}} bilder </p>
+	</div>
+</div>
+</div>
 
 {% endblock %}
