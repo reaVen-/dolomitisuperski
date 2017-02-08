@@ -10,7 +10,7 @@ from upload.models import Image
 # Create your views here.
 
 def handle_uploaded_file(f):
-    with open(settings.MEDIA_ROOT+"/images/"+f.name, 'wb+') as destination:
+    with open(settings.MEDIA_ROOT+"images/"+f.name, 'wb+') as destination:
         for chunk in f.chunks():
             destination.write(chunk)
 
