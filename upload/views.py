@@ -20,7 +20,10 @@ def index(request):
 
         for image in images:
             handle_uploaded_file(image)
-            Image(filename=image.name).save()
+            try:
+                Image(filename=image.name).save()
+            except:
+                Image(filename=image.name+"(0)").save()
 
 
     total = len(Image.objects.all())
