@@ -13,9 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^$', "upload.views.index", name="index"),
-    url(r'^upload/upload_file/$', "upload.views.upload_file", name="upload_file"),
+    url(r'^progressbarupload/', include('progressbarupload.urls')),
 ]
