@@ -1,0 +1,99 @@
+.card-title
+{
+	text-align: center;
+}
+
+select
+{
+	display:inline-block;
+}
+
+.select-opponent
+{
+	width:65%;
+	display: inline-block;
+}
+
+.black-player
+{
+	color:white;
+	font-size: 20px;
+}
+
+.white-player
+{
+	color:black;
+	font-size: 20px;
+}
+
+.grid
+{
+	height:60px;
+	width:60px;
+	background-color: white;
+	position: relative;
+	margin:2px;
+	overflow: hidden;
+	display:inline-block;
+}
+
+.replace
+{
+	height:60px;
+	width:260px;
+	position: relative;
+	overflow: hidden;
+	display:none;
+	background-color: white;
+	margin: 2px;
+}
+
+.rpiece
+{
+	background-color: white;
+	width:60px;
+	height:60px;
+}
+
+.selected
+{
+	margin: 0px;
+	border: 2px solid green;
+}
+
+#status
+{
+	color: white;
+}
+
+#board
+{
+	text-align: center;
+}
+
+body
+{
+	background-color: #795548;
+}
+
+nav
+{
+	background-color: #5D4037;
+}
+
+.white
+{
+	background-color: white;
+}
+
+.black
+{
+	background-color: grey;
+}
+
+.piece
+{
+	width:60px;
+	height:60px;
+	background-color: rgba(112, 112, 112, 0.5);
+}
